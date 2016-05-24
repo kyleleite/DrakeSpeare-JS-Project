@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drakespeare</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<section class="main-container">
+		<div class="wrapper">
+			<div class="header">
+				<img src="assets/head-logo.png" alt="drakespeare-logo">
+				<h1> drakespeare</h1>
+			</div>
+			<div class="form-container">
+				<div class="form">
+					<form action="">
+						<p>What kind of text do you need?</p>
+						<input type="radio" name="textChoice" id="onlyDrake" value="onlyDrake" hidden>
+						<label for="onlyDrake">Only Drake</label>
+						<input type="radio" name="textChoice" id="mix" value="mix" hidden>
+						<label for="mix">Mix</label>
+						<input type="radio" name="textChoice" id="onlyShakespeare" value="onlyShakespeare" hidden>
+						<label for="onlyShakespeare">Only Shakespeare</label>
+						<p>How long do you want your paragraph to be?</p>
+						<input type="radio" name="sizeChoice" id="short" value="short" hidden>
+						<label for="short">Short</label>
+						<input type="radio" name="sizeChoice" id="medium" value="medium" hidden>
+						<label for="medium">Medium</label>
+						<input type="radio" name="sizeChoice" id="long" value="long" hidden>
+						<label for="long">Long</label>
+						<div>
+							<input type="submit" value="GENERATE" class="btnGen">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="return">
+				<div class="textBox">
+					
+				</div>
+					<div class='copied'>
+					</div>
+					<button type="button" class="btn" data-clipboard-target=".textBox">COPY TEXT</button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<footer>
+			<div class="wrapper">
+				<p>Designed & Developed by CJ Reyes & Kyle Leite | 2016</p>
+			</div>
+		</footer>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+</body>
+</html>
